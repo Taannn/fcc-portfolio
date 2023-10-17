@@ -1,5 +1,13 @@
 :root {
+  --smoky-black: hsla(41, 100%, 3%, 1);
+  --yellow-green: hsla(88, 60%, 50%, 1);
+  --nyanza: hsla(77, 100%, 89%, 1);
+  --ash-gray: hsla(167, 27%, 72%, 1);
+  --drab-dark-brown: hsla(45, 31%, 18%, 1);
 
+  ff-text: 'Inter', sans-serif;
+  ff-main: 'Six Caps', sans-serif;
+  
 }
 
 /* reset */
