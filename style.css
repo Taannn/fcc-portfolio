@@ -1,12 +1,12 @@
 :root {
-  --platinum: hsla(0, 0%, 91%, 1);
-  --silver: hsla(0, 0%, 75%, 1);
-  --taupe-gray: hsla(263, 4%, 59%, 1);
-  --english-violet: hsla(300, 13%, 30%, 1);
-  --coral: hsla(19, 97%, 64%, 1);
+  --dark-moss-green: hsla(74, 32%, 32%, 1);
+  --pakistan-green: hsla(88, 38%, 15%, 1);
+  --cornsilk: hsla(52, 94%, 94%, 1);
+  --earth-yellow: hsla(32, 65%, 62%, 1);
+  --tigers-eye: hsla(28, 67%, 44%, 1);
 
-  ff-text: 'Inter', sans-serif;
-  ff-main: 'Six Caps', sans-serif;
+  --ff-text: 'Inter', sans-serif;
+  --ff-main: 'Six Caps', sans-serif;
 
 }
 
@@ -49,10 +49,18 @@ a {
   max-width: 1100px;
   margin-inline: auto;
 }
-
+.full-width {
+  height: 100vh;
+}
+.centered-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* header styles */
 header {
-  background-color: var(--english-violet);
+  background-color: var(--pakistan-green);
   position: fixed;
   top: 0;
   left: 0;
@@ -66,11 +74,56 @@ header {
 
 }
 .nav-link {
-  color: var(--platinum);
+  color: var(--cornsilk);
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease-in-out;
 }
 .nav-link:hover {
   border-bottom: 2px solid var(--platinum);
 }
-/* main styles */
+
+/* welcome-section */
+#welcome-section {
+  background-color: var(--cornsilk);
+  color: #010101;
+  padding-top: 3em;
+  font-family: var(--ff-main);
+  font-size: 5em;
+  line-height: 1.3;
+}
+#welcome-section p {
+  font-size: 3.5rem;
+}
+
+/* projects */
+.wrapper {
+  background-color: var(--tigers-eye);
+  height: 100vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "p--one   p--two"
+    "p--three p--four";
+  gap: 1.5em;
+  padding: 4em;
+}
+.project-tile {
+  border: 2px solid black;
+}
+.img-container {
+  border: 2px solid blue;
+}
+.p--one {
+  grid-area: p--one;
+}
+.p--two {
+  grid-area: p--two;
+}
+.p--three {
+  grid-area: p--three;
+}
+.p--four {
+  grid-area: p--four;
+}
