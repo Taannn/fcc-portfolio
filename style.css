@@ -1,13 +1,13 @@
 :root {
-  --smoky-black: hsla(41, 100%, 3%, 1);
-  --yellow-green: hsla(88, 60%, 50%, 1);
-  --nyanza: hsla(77, 100%, 89%, 1);
-  --ash-gray: hsla(167, 27%, 72%, 1);
-  --drab-dark-brown: hsla(45, 31%, 18%, 1);
+  --platinum: hsla(0, 0%, 91%, 1);
+  --silver: hsla(0, 0%, 75%, 1);
+  --taupe-gray: hsla(263, 4%, 59%, 1);
+  --english-violet: hsla(300, 13%, 30%, 1);
+  --coral: hsla(19, 97%, 64%, 1);
 
   ff-text: 'Inter', sans-serif;
   ff-main: 'Six Caps', sans-serif;
-  
+
 }
 
 /* reset */
@@ -23,7 +23,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, canvas, picture, svg {
+img, canvas, picture, svg, iframe {
   display: block;
   max-width: 100%;
 }
@@ -41,10 +41,36 @@ li {
 a {
   text-decoration: none;
 }
+
 /* page layout */
 
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
 /* header styles */
+header {
+  background-color: var(--english-violet);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 
+}
+.nav-link {
+  color: var(--platinum);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--platinum);
+}
 /* main styles */
-
-/* footer styles */
