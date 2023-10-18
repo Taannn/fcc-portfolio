@@ -98,22 +98,36 @@ header {
 /* projects */
 .wrapper {
   background-color: var(--tigers-eye);
-  height: 100vh;
+
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
+    "p--title p--title"
     "p--one   p--two"
     "p--three p--four";
   gap: 1.5em;
-  padding: 4em;
+  padding: 4em 0;
 }
 .project-tile {
-  border: 2px solid black;
+  border: 2px solid transparent;
+  border-radius: 1em;
+  box-shadow: 0 0 5px 1px var(--pakistan-green);
+  overflow: hidden;
 }
-.img-container {
-  border: 2px solid blue;
+.project-tile p {
+  background-color: var(--pakistan-green);
+  color: var(--cornsilk);
+  text-align: center;
+  padding: 0.2em;
+}
+.project-title {
+  grid-area: p--title;
+  text-align: center;
+  font-family: var(--ff-main);
+  font-size: 3em;
+  letter-spacing: 1px;
 }
 .p--one {
   grid-area: p--one;
