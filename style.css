@@ -192,7 +192,9 @@ header {
       "p--one"
       "p--two"
       "p--three"
-      "p--four";
+      "p--four"
+      "p--five"
+      "p--six";
     gap: 1.5em;
     padding: 4em 0;
   }
