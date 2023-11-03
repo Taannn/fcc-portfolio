@@ -114,7 +114,8 @@ header {
   grid-template-areas:
     "p--title p--title"
     "p--one   p--two"
-    "p--three p--four";
+    "p--three p--four"
+    "p--five  p--six";
   gap: 1.5em;
   padding: 4em 0;
 }
@@ -150,7 +151,12 @@ header {
 .p--four {
   grid-area: p--four;
 }
-
+.p--five {
+  grid-area: p--five;
+}
+.p--six {
+  grid-area: p--six;
+}
 /* projects link */
 .project-link:hover {
   opacity: 0.8;
